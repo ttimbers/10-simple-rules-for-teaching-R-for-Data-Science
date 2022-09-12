@@ -1,0 +1,94 @@
+---
+title: "10 simple rules for teaching R for Data Science"  
+author: 
+  - "Tiffany Timbers (UBC)"
+  - "`r Sys.Date()`"
+date: 'bit.ly/timbers-cascadia-r-conf-2022'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: '%current%'
+      titleSlideClass: [top, left]
+      ratio: '16:9'
+
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(message = FALSE, 
+                      echo = FALSE, 
+                      warning = FALSE,
+                      fig.align = "center")
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#9F999C",
+  secondary_color = "#FFE5F3",
+  inverse_header_color = "#8F8C8E",
+  link_color = "deeppink",
+  title_slide_text_color = "#3d3d3d",
+  title_slide_background_image = "img/title-slide-background-light.png",
+  title_slide_background_position = "left",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono")
+)
+```
+
+
+class: middle
+
+
+---
+
+class: middle
+
+## Summary
+
+1. Teach R by doing data analysis - and teach the skills you need to do it as you go. Helps with motivation.
+2. Live code!
+3. Give students tons and tons of practice!
+4. Give students tons and tons of feedback!
+5. Use tractable toy data examples
+6. Use real data sets
+7. Provide cultural and historical context
+8. Build a safe, inclusive and welcoming community
+9. Utilize/facilitate peer learning
+10. Use realistic projects to link concepts/tasks together
+
+---
+
+class: middle
+
+## Acknowledgements
+
+
+- UBC Master of Data Science students
+
+- UBC DSCI 100 and 310 students
+
+- UBC Master of Data Science teaching team
+
+- The Carpentries
+
+---
+
+## References
+
+1. 
+
+---
+
+
+class: inverse, center, middle
+
+## 10 simple rules for teaching R for Data Science?
+
+#### talk slides: *[https://bit.ly/timbers-cascadia-r-conf-2022](https://bit.ly/timbers-cascadia-r-conf-2022)*

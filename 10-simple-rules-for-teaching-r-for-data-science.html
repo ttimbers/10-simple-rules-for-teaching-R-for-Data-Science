@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>10 simple rules for teaching R for Data Science</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Tiffany Timbers (UBC)" />
+    <meta name="author" content="2022-09-12" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: top, left, title-slide
+
+.title[
+# 10 simple rules for teaching R for Data Science
+]
+.author[
+### Tiffany Timbers (UBC)
+]
+.author[
+### 2022-09-12
+]
+.date[
+### bit.ly/timbers-cascadia-r-conf-2022
+]
+
+---
+
+
+
+
+
+
+&lt;style type="text/css"&gt;
+# source: https://community.rstudio.com/t/using-multiple-font-sizes-for-code-chunks/26405/6
+.remark-slide-content {
+  font-size: 20px;
+  padding: 20px 80px 20px 80px;
+}
+.remark-code, .remark-inline-code {
+  background: #f0f0f0;
+}
+.remark-code {
+  font-size: 24px;
+}
+.huge .remark-code { /*Change made here*/
+  font-size: 200% !important;
+}
+.tiny .remark-code { /*Change made here*/
+  font-size: 60% !important;
+}
+&lt;/style&gt;
+
+
+## 1. Teach R by doing data analysis...
+
+... and teach the skills you need to do it as you go. 
+
+#### Example:
+
+In your first lesson, load the data, do some "mild" wrangling and make a plot!
+
+.pull-left[
+
+.tiny[
+```r
+library(tidyverse)
+
+# load the data set
+can_lang &lt;- read_csv("data/can_lang.csv")
+
+# obtain the 10 most common Aboriginal languages
+aboriginal_lang &lt;- filter(can_lang, 
+                          category == "Aboriginal languages")
+arranged_lang &lt;- arrange(aboriginal_lang, 
+                         by = desc(mother_tongue))
+ten_lang &lt;- slice(arranged_lang, 1:10)
+
+# create the visualization
+ggplot(ten_lang, aes(x = mother_tongue,
+                     y = reorder(language, mother_tongue))) +
+  geom_bar(stat = "identity") +
+  xlab("Mother Tongue (Number of Canadian Residents)") +
+  ylab("Language") 
+```
+]
+]
+
+.pull-right[
+&lt;img src="img/nachos-to-cheesecake-1.png" width="100%" style="display: block; margin: auto auto auto 0;" /&gt;
+]
+
+Source: 
+[Chapter 1 of *Data Science: A First Introduction*](https://datasciencebook.ca/intro.html) 
+by Tiffany Timbers, Trevor Campbell &amp; Melissa Lee
+
+---
+
+&lt;!---Teaching the tidyverse can facilitate this:---&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;When you start writing a loop then turn it into dplyr &lt;a href="https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#rstats&lt;/a&gt;; David Robinson (@drob) &lt;a href="https://twitter.com/drob/status/701790246111825925"&gt;Feb 22, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+---
+
+## 2. Live code!
+
+
+---
+
+## 3. Give students tons and tons of practice!
+
+
+---
+
+## 4. Give students tons and tons of feedback!
+
+
+---
+
+## 5. Use tractable toy data examples
+
+
+---
+
+## 5. Use tractable toy data examples
+
+
+---
+
+## 6. Use real data sets
+
+---
+
+## 7. Provide cultural and historical context
+
+
+---
+
+## 8. Build a safe, inclusive and welcoming community
+
+
+---
+
+## 9. Utilize/facilitate peer learning
+
+
+---
+
+10. Use realistic projects to link concepts/tasks together
+
+
+---
+
+
+## Summary
+
+1. Teach R by doing data analysis - and teach the skills you need to do it as you go. Helps with motivation.
+2. Live code!
+3. Give students tons and tons of practice!
+4. Give students tons and tons of feedback!
+5. Use tractable toy data examples
+6. Use real data sets
+7. Provide cultural and historical context
+8. Build a safe, inclusive and welcoming community
+9. Utilize/facilitate peer learning
+10. Use realistic projects to link concepts/tasks together
+
+---
+
+
+## Acknowledgements
+
+
+- UBC Master of Data Science students
+
+- UBC DSCI 100 and 310 students
+
+- UBC Master of Data Science teaching team
+
+- The Carpentries
+
+---
+
+## References
+
+1. 
+
+---
+
+
+class: inverse, center, middle
+
+## 10 simple rules for teaching R for Data Science?
+
+#### talk slides: *[https://bit.ly/timbers-cascadia-r-conf-2022](https://bit.ly/timbers-cascadia-r-conf-2022)*
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

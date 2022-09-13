@@ -47,6 +47,9 @@ class: top, left, title-slide
 .huge .remark-code { /*Change made here*/
   font-size: 200% !important;
 }
+.small .remark-code { /*Change made here*/
+  font-size: 80% !important;
+}
 .tiny .remark-code { /*Change made here*/
   font-size: 60% !important;
 }
@@ -203,13 +206,28 @@ A small subset of the `palmerpengiuns` data set for teaching K-means clustering:
 
 ---
 
-[Jenny Bryan's join cheat sheet](https://stat545.com/join-cheatsheet.html):
+.pull-left[
 
-&lt;img src="img/jenny-bryan-left-join.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/jenny-dplyr-join-tweet.png" width="100%" style="display: block; margin: auto;" /&gt;
 
+.small[
+```r
+left_join(superheroes, publishers)
+```
+]
+
+We basically get `x = superheroes` back, but with the addition of variable `yr_founded`, which is unique to `y = publishers`. Hellboy, whose publisher does not appear in `y = publishers`, has an `NA` for `yr_founded`.
+
+&lt;img src="img/jenny-bryan-left-join.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
 ### Explore more:
-...
-
+- [Jenny Bryan's join cheat sheet](https://stat545.com/join-cheatsheet.html)
+- [`dpylr::tibble`](https://tibble.tidyverse.org/reference/tibble.html) or [`dpylr::tribble`](https://tibble.tidyverse.org/reference/tribble.html) R functions
+- [`sample`](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/sample) or [`dpylr::sample_n`](https://dplyr.tidyverse.org/reference/sample_n.html) R functions
+- [charlatan](https://docs.ropensci.org/charlatan/) R package for creating fake data
+]
 ---
 
 ## 6. Use real and rich data sets

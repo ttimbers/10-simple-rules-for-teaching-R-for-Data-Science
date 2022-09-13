@@ -53,16 +53,13 @@ class: top, left, title-slide
 &lt;/style&gt;
 
 
-## 1. Teach R by doing data analysis...
+## 1. Teach R by doing data analysis
 
-... and teach the skills you need to do it as you go. 
+**What?** In your first lesson, load the data, do some "mild" wrangling and make a plot!
 
-#### Example:
-
-In your first lesson, load the data, do some "mild" wrangling and make a plot!
+**Why?** Motivation!
 
 .pull-left[
-
 .tiny[
 ```r
 library(tidyverse)
@@ -99,18 +96,74 @@ by Tiffany Timbers, Trevor Campbell &amp; Melissa Lee
 
 &lt;!---Teaching the tidyverse can facilitate this:---&gt;
 
+.pull-left[
 &lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;When you start writing a loop then turn it into dplyr &lt;a href="https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#rstats&lt;/a&gt;; David Robinson (@drob) &lt;a href="https://twitter.com/drob/status/701790246111825925"&gt;Feb 22, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+]
+
+.pull-right[
+&lt;img src="img/jenny-teach-tidyverse.png" width="1736" style="display: block; margin: auto;" /&gt;
+
+### Explore more:
+David Robinson:
+- [Teach the tidyverse to beginners](http://varianceexplained.org/r/teach-tidyverse/)
+blog post
+- [Announcing "Introduction to the Tidyverse", my new DataCamp course](http://varianceexplained.org/r/intro-tidyverse/) blog post
+- [Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) online course
+]
+---
+
+## 2. Participatory live coding!
+
+**What?** Narrate and type out the code you are teaching. Have participants follow along.
+
+**Why?** Demonstrates process and makes you appear human!
+
+&lt;img src="img/lex-live-coding.png" width="70%" style="display: block; margin: auto;" /&gt;
+Source: [A video introduction to live coding part 2](https://www.youtube.com/watch?v=SkPmwe_WjeY&amp;t=111s) by Lex Nederbragt
 
 ---
 
-## 2. Live code!
+&lt;img src="img/carpentries.png" width="70%" style="display: block; margin: auto;" /&gt;
 
-
+### Explore more:
+- [Ten quick tips for teaching with participatory
+live coding](https://doi.org/10.1371/journal.pcbi.1008090) by Lex Nederbragt, Rayna Harris, Alison Hill &amp; Greg Wilson
+- [Live coding section of Teaching Tech Together](https://teachtogether.tech/en/index.html#s:performance-live) by Greg Wilson
+- Example live coding videos by Lex Nederbragt ([bad example](https://www.youtube.com/watch?v=bXxBeNkKmJE&amp;t=5s), [good example](https://www.youtube.com/watch?v=SkPmwe_WjeY&amp;t=111s))
 ---
 
 ## 3. Give students tons and tons of practice!
 
+**What?** Give the learners many many problems to solve.
+
+**Why?** Repetition leads to learning!
+
+Read the data files listed in the table below and and bind the names listed in the table to them.
+
+| File  | Object name to bind to the data frame | File location |
+|---|---|----|
+| `abbotsford_lang.xlsx`  | `abbotsford` | `data` directory of this repo |
+| `calgary_lang.csv`  | `calgary`  | `data` directory of this repo |
+| `edmonton_lang.xlsx`  | `edmonton`  | https://github.com/ttimbers/canlang/tree/master/inst/extdata |
+|  `kelowna_lang.csv` | `kelowna`  | `data` directory of this repo |
+| `vancouver_lang.csv`  | `vancouver`  | `data` directory of this repo |
+| `victoria_lang.csv`  | `victoria`  | https://github.com/ttimbers/canlang/tree/master/inst/extdata |
+
+---
+
+.pull-left[
+&lt;img src="img/swirl.png" width="30%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="img/swirl-demo.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+### Explore more:
+- [Swirl R package](https://swirlstats.com/) by Sean Kross and others
+- [Practice worksheets to accompany Data Science: A First Introduction](https://github.com/UBC-DSCI/data-science-a-first-intro-worksheets#readme) by Tiffany Timbers, Trevor Campbell and Melissa Lee
+- [Supervised Machine Learning Case Studies in R course](https://supervised-ml-course.netlify.app) by Julia Silge
+]
 
 ---
 

@@ -42,13 +42,192 @@ style_duo_accent(
 )
 ```
 
+```{css, echo = FALSE}
+# source: https://community.rstudio.com/t/using-multiple-font-sizes-for-code-chunks/26405/6
+.remark-slide-content {
+  font-size: 20px;
+  padding: 20px 80px 20px 80px;
+}
+.remark-code, .remark-inline-code {
+  background: #f0f0f0;
+}
+.remark-code {
+  font-size: 24px;
+}
+.huge .remark-code { /*Change made here*/
+  font-size: 200% !important;
+}
+.tiny .remark-code { /*Change made here*/
+  font-size: 60% !important;
+}
+```
 
-class: middle
+
+## 1. Teach R by doing data analysis
+
+**What?** In your first lesson, load the data, do some "mild" wrangling and make a plot!
+
+**Why?** Motivation!
+
+.pull-left[
+.tiny[
+```r
+library(tidyverse)
+
+# load the data set
+can_lang <- read_csv("data/can_lang.csv")
+
+# obtain the 10 most common Aboriginal languages
+aboriginal_lang <- filter(can_lang, 
+                          category == "Aboriginal languages")
+arranged_lang <- arrange(aboriginal_lang, 
+                         by = desc(mother_tongue))
+ten_lang <- slice(arranged_lang, 1:10)
+
+# create the visualization
+ggplot(ten_lang, aes(x = mother_tongue,
+                     y = reorder(language, mother_tongue))) +
+  geom_bar(stat = "identity") +
+  xlab("Mother Tongue (Number of Canadian Residents)") +
+  ylab("Language") 
+```
+]
+]
+
+.pull-right[
+```{r nachos-to-cheesecake-1, out.width="100%", fig.align="left", fig.retina=2}
+knitr::include_graphics("img/nachos-to-cheesecake-1.png")
+```
+]
+
+Source: 
+[Chapter 1 of *Data Science: A First Introduction*](https://datasciencebook.ca/intro.html) 
+by Tiffany Timbers, Trevor Campbell & Melissa Lee
+
+---
+
+<!---Teaching the tidyverse can facilitate this:--->
+
+.pull-left[
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">When you start writing a loop then turn it into dplyr <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>; David Robinson (@drob) <a href="https://twitter.com/drob/status/701790246111825925">Feb 22, 2016</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+]
+
+.pull-right[
+```{r jenny-teach-tidyverse}
+knitr::include_graphics("img/jenny-teach-tidyverse.png")
+```
+
+### Explore more:
+David Robinson:
+- [Teach the tidyverse to beginners](http://varianceexplained.org/r/teach-tidyverse/)
+blog post
+- [Announcing "Introduction to the Tidyverse", my new DataCamp course](http://varianceexplained.org/r/intro-tidyverse/) blog post
+- [Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) online course
+]
+---
+
+## 2. Participatory live coding!
+
+**What?** Narrate and type out the code you are teaching. Have participants follow along.
+
+**Why?** Demonstrates process and makes you appear human!
+
+```{r lex-live-coding, out.width="70%", fig.retina=2, fig.pos='left'}
+knitr::include_graphics("img/lex-live-coding.png")
+```
+Source: [A video introduction to live coding part 2](https://www.youtube.com/watch?v=SkPmwe_WjeY&t=111s) by Lex Nederbragt
+
+---
+
+```{r carpentries, out.width="70%", fig.retina=2}
+knitr::include_graphics("img/carpentries.png")
+```
+
+### Explore more:
+- [Ten quick tips for teaching with participatory
+live coding](https://doi.org/10.1371/journal.pcbi.1008090) by Lex Nederbragt, Rayna Harris, Alison Hill & Greg Wilson
+- [Live coding section of Teaching Tech Together](https://teachtogether.tech/en/index.html#s:performance-live) by Greg Wilson
+- Example live coding videos by Lex Nederbragt ([bad example](https://www.youtube.com/watch?v=bXxBeNkKmJE&t=5s), [good example](https://www.youtube.com/watch?v=SkPmwe_WjeY&t=111s))
+---
+
+## 3. Give students tons and tons of practice!
+
+**What?** Give the learners many many problems to solve.
+
+**Why?** Repetition leads to learning!
+
+Read the data files listed in the table below and and bind the names listed in the table to them.
+
+| File  | Object name to bind to the data frame | File location |
+|---|---|----|
+| `abbotsford_lang.xlsx`  | `abbotsford` | `data` directory of this repo |
+| `calgary_lang.csv`  | `calgary`  | `data` directory of this repo |
+| `edmonton_lang.xlsx`  | `edmonton`  | https://github.com/ttimbers/canlang/tree/master/inst/extdata |
+|  `kelowna_lang.csv` | `kelowna`  | `data` directory of this repo |
+| `vancouver_lang.csv`  | `vancouver`  | `data` directory of this repo |
+| `victoria_lang.csv`  | `victoria`  | https://github.com/ttimbers/canlang/tree/master/inst/extdata |
+
+---
+
+.pull-left[
+```{r swirl, out.width="30%", fig.retina=2}
+knitr::include_graphics("img/swirl.png")
+```
+
+```{r swirl-demo, out.width="90%", fig.retina=2}
+knitr::include_graphics("img/swirl-demo.png")
+```
+]
+
+.pull-right[
+### Explore more:
+- [Swirl R package](https://swirlstats.com/) by Sean Kross and others
+- [Practice worksheets to accompany Data Science: A First Introduction](https://github.com/UBC-DSCI/data-science-a-first-intro-worksheets#readme) by Tiffany Timbers, Trevor Campbell and Melissa Lee
+- [Supervised Machine Learning Case Studies in R course](https://supervised-ml-course.netlify.app) by Julia Silge
+]
+
+---
+
+## 4. Give students tons and tons of feedback!
 
 
 ---
 
-class: middle
+## 5. Use tractable toy data examples
+
+
+---
+
+## 5. Use tractable toy data examples
+
+
+---
+
+## 6. Use real data sets
+
+---
+
+## 7. Provide cultural and historical context
+
+
+---
+
+## 8. Build a safe, inclusive and welcoming community
+
+
+---
+
+## 9. Utilize/facilitate peer learning
+
+
+---
+
+10. Use realistic projects to link concepts/tasks together
+
+
+---
+
 
 ## Summary
 
@@ -65,7 +244,6 @@ class: middle
 
 ---
 
-class: middle
 
 ## Acknowledgements
 

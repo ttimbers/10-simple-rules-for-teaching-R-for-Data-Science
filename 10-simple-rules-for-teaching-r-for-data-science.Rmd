@@ -259,6 +259,7 @@ knitr::include_graphics("img/jenny-bryan-left-join.png")
 - [`dpylr::tibble`](https://tibble.tidyverse.org/reference/tibble.html) or [`dpylr::tribble`](https://tibble.tidyverse.org/reference/tribble.html) R functions
 - [`sample`](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/sample) or [`dpylr::sample_n`](https://dplyr.tidyverse.org/reference/sample_n.html) R functions
 - [charlatan](https://docs.ropensci.org/charlatan/) R package for creating fake data
+- [drawdata.xyz](https://drawdata.xyz/) app to draw a data set and download it
 ]
 ---
 
@@ -272,6 +273,7 @@ knitr::include_graphics("img/jenny-bryan-left-join.png")
 ---
 
 ### Explore more:
+- [canlang](https://ttimbers.github.io/canlang/) R package 
 - [Palmer penguins](https://allisonhorst.github.io/palmerpenguins/) R package
 
 ---

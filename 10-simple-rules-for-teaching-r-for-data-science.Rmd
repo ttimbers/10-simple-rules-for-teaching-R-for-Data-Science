@@ -121,7 +121,7 @@ by Tiffany Timbers, Trevor Campbell & Melissa Lee
 knitr::include_graphics("img/jenny-teach-tidyverse.png")
 ```
 
-### Explore more:
+#### Explore more:
 David Robinson:
 - [Teach the tidyverse to beginners](http://varianceexplained.org/r/teach-tidyverse/)
 blog post
@@ -147,7 +147,7 @@ Source: [A video introduction to live coding part 2](https://www.youtube.com/wat
 knitr::include_graphics("img/carpentries.png")
 ```
 
-### Explore more:
+#### Explore more:
 - [Ten quick tips for teaching with participatory
 live coding](https://doi.org/10.1371/journal.pcbi.1008090) by Lex Nederbragt, Rayna Harris, Alison Hill & Greg Wilson
 - [Live coding section of Teaching Tech Together](https://teachtogether.tech/en/index.html#s:performance-live) by Greg Wilson
@@ -184,7 +184,7 @@ knitr::include_graphics("img/swirl-demo.png")
 ]
 
 .pull-right[
-### Explore more:
+#### Explore more:
 - [Swirl R package](https://swirlstats.com/) by Sean Kross and others
 - [Practice worksheets to accompany Data Science: A First Introduction](https://github.com/UBC-DSCI/data-science-a-first-intro-worksheets#readme) by Tiffany Timbers, Trevor Campbell and Melissa Lee
 - [Supervised Machine Learning Case Studies in R course](https://supervised-ml-course.netlify.app) by Julia Silge
@@ -212,7 +212,7 @@ knitr::include_graphics("img/teaching-tech-together.jpeg")
 ]
 
 .pull-right[
-### Explore more:
+#### Explore more:
 - [Automatic Grading chapter of *Teaching Tech Together*](https://teachtogether.tech/en/index.html#s:exercises-grading) by Greg Wilson
 - [learnr](https://rstudio.github.io/learnr/) R package for automated feedback of R Markdown documents
 - [nbgrader](https://nbgrader.readthedocs.io/en/stable/) tool for automated feedback & autograding of Jupyter notebooks
@@ -254,7 +254,7 @@ knitr::include_graphics("img/jenny-bryan-left-join.png")
 ]
 
 .pull-right[
-### Explore more:
+#### Explore more:
 - [Jenny Bryan's join cheat sheet](https://stat545.com/join-cheatsheet.html)
 - [`dpylr::tibble`](https://tibble.tidyverse.org/reference/tibble.html) or [`dpylr::tribble`](https://tibble.tidyverse.org/reference/tribble.html) R functions
 - [`sample`](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/sample) or [`dpylr::sample_n`](https://dplyr.tidyverse.org/reference/sample_n.html) R functions
@@ -317,10 +317,41 @@ ggplot(subset(gapminder, continent != "Oceania"),
 
 ## 7. Provide cultural and historical context
 
-**What?** 
+**What?** When R things seem "odd", take time to explain why they are the way they are.
 
-**Why?**
+**Why?** Cultivates an appreciation, or at least understanding of R's quirks (compared to other programming languages). Helps prevent frustration and/or annoyances. Helps with motivation again!
 
+When teaching programming with the `tidyverse`, 
+I make sure to introduce R's history and it's design purpose, 
+so that the role and rationale for unquoted column names is clear:
+
+>#### Now, a bit of history about R
+>- An implementation of the S programming language (created at Bell labs in 1976)
+>- written in C, Fortran, and R itself
+>- R was created by Ross Ihaka and Robert Gentleman (Statisticians from NZ)
+>- R is named partly after the authors and partly as a play on the name of S
+>- First stable beta version in 2000
+
+---
+
+.pull-left[
+```{r why-assignment-1, out.width="100%", fig.retina=2}
+knitr::include_graphics("img/why-assignment-1.png")
+```
+
+(Or why `<-` instead of `=`?)
+
+```{r why-assignment-2, out.width="100%", fig.retina=2}
+knitr::include_graphics("img/why-assignment-2.png")
+```
+]
+
+.pull-right[
+
+#### Explore more:
+- [Introduction to *R for Data Engineers*](https://tidynomicon.github.io/tidynomicon/) by Greg Wilson
+- 
+]
 ---
 
 ## 8. Build a safe, inclusive and welcoming community
@@ -331,11 +362,17 @@ ggplot(subset(gapminder, continent != "Oceania"),
 
 ---
 
-## 9. Utilize/facilitate peer learning
+## 9. Use checklists to focus and facilitate peer learning
 
 **What?** 
 
 **Why?**
+
+Data analysis checklist I made
+
+---
+
+ROpenSci pacakge review checklist 
 
 ---
 

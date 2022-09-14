@@ -359,18 +359,25 @@ Source: https://colinfay.me/r-assignment/
 
 ## 8. Build a safe, inclusive and welcoming community
 
-**What?** 
+**What?** Put in place scaffolding and guidelines to facilitate a safe learning environment.
 
-**Why?**
+**Why?** Students cannot effectively learn if they do not feel safe.
 
-Our MDS CoC? or DSCI 100?
+```{r dsci-100-coc, out.width="78%", fig.retina=2}
+knitr::include_graphics("img/dsci-100-coc.png")
+```
 
+Source: https://ubc-dsci.github.io/dsci-100-student/CODE_OF_CONDUCT.html
 ---
 
-Carpentries CoC
+```{r carpentries-coc, out.width="100%", fig.retina=2}
+knitr::include_graphics("img/carpentries-coc.png")
+```
+
+Source: https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html
 
 #### Explore more:
-Allyskills workshop
+- [Ally Skills workshop](https://frameshiftconsulting.com/ally-skills-workshop/)
 
 ---
 

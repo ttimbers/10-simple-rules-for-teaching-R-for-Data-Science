@@ -130,7 +130,7 @@ blog post
 ]
 ---
 
-### 2. Participatory live coding!
+### 2. Use participatory live coding!
 
 **What?** Narrate and type out the code you are teaching. Have participants follow along.
 
@@ -154,7 +154,7 @@ live coding](https://doi.org/10.1371/journal.pcbi.1008090) by Lex Nederbragt, Ra
 - Example live coding videos by Lex Nederbragt ([bad example](https://www.youtube.com/watch?v=bXxBeNkKmJE&t=5s), [good example](https://www.youtube.com/watch?v=SkPmwe_WjeY&t=111s))
 ---
 
-### 3. Give students tons and tons of practice!
+### 3. Give tons and tons of practice!
 
 **What?** Give the learners many many problems to solve.
 
@@ -193,7 +193,7 @@ knitr::include_graphics("img/swirl-demo.png")
 
 ---
 
-### 4. Give students tons and tons of timely feedback!
+### 4. Give tons and tons of timely feedback!
 
 **What?** Automated software tests to give hints and feedback.
 
@@ -263,18 +263,55 @@ knitr::include_graphics("img/jenny-bryan-left-join.png")
 ]
 ---
 
-## 6. Use real and rich data sets
+## 6. Use real and rich, but accessible, data sets
 
-**What?** 
+**What?** Use real and interesting data that is also easily understood by all.
 
-**Why?** 
+**Why?** Motivating! 
 
+```{r README-example-plot-from-data-1, out.width="70%", fig.retina=2}
+knitr::include_graphics("img/README-example-plot-from-data-1.png")
+```
 
+Source: [`canlang`](https://ttimbers.github.io/canlang/) R package
 ---
+.pull-left[
+Jenny Bryan's [`gapminder`](https://github.com/jennybc/gapminder) R data package:
 
-### Explore more:
-- [canlang](https://ttimbers.github.io/canlang/) R package 
-- [Palmer penguins](https://allisonhorst.github.io/palmerpenguins/) R package
+| variable  | meaning                  |
+| :-------- | :----------------------- |
+| country   |                          |
+| continent |                          |
+| year      |                          |
+| lifeExp   | life expectancy at birth |
+| pop       | total population         |
+| gdpPercap | per-capita GDP           |
+]
+
+.pull-right[
+```{r gapminder, fig.height=5}
+# source: https://github.com/jennybc/gapminder
+# for convenience, integrate the country colors into the data.frame
+library(gapminder)
+library("ggplot2")
+
+ggplot(subset(gapminder, continent != "Oceania"),
+       aes(x = year, y = lifeExp, group = country, color = country)) +
+  geom_line(lwd = 1, show.legend = FALSE) + facet_wrap(~ continent) +
+  scale_color_manual(values = country_colors) +
+  theme_bw() + theme(strip.text = element_text(size = rel(1.1))) +
+  labs(x = "Year",
+       y = "Life Expectancy (years)")
+```
+]
+
+#### Explore more:
+- [`canlang`](https://ttimbers.github.io/canlang/) R data package 
+- [`palmerpenguins`](https://allisonhorst.github.io/palmerpenguins/) R data package
+- [`Lahman`](https://github.com/cdalzell/Lahman) baseball R data package
+- [`datateachr`](https://github.com/UBC-MDS/datateachr) R data package
+- [`taxyvr`](https://github.com/UBC-MDS/taxyvr) R data package
+- [UCI Machine Learning Repository](https://archive-beta.ics.uci.edu/) for data sets
 
 ---
 
@@ -313,12 +350,12 @@ knitr::include_graphics("img/jenny-bryan-left-join.png")
 
 ## Summary
 
-1. Teach R by doing data analysis - and teach the skills you need to do it as you go. Helps with motivation.
-2. Live code!
-3. Give students tons and tons of practice!
-4. Give students tons and tons of feedback!
-5. Use tractable toy data examples
-6. Use real data sets
+1. Teach R by doing data analysis
+2. Use participatory live coding
+3. Give tons and tons of practice!
+4. Give tons and tons of feedback!
+5. Use tractable or toy data examples
+6. Use real and rich, but accessible, data sets
 7. Provide cultural and historical context
 8. Build a safe, inclusive and welcoming community
 9. Utilize/facilitate peer learning
@@ -340,15 +377,9 @@ knitr::include_graphics("img/jenny-bryan-left-join.png")
 
 ---
 
-## References
-
-1. 
-
----
-
 
 class: inverse, center, middle
 
-## 10 simple rules for teaching R for Data Science?
+## 10 simple rules for teaching R for Data Science
 
 #### talk slides: *[https://bit.ly/timbers-cascadia-r-conf-2022](https://bit.ly/timbers-cascadia-r-conf-2022)*

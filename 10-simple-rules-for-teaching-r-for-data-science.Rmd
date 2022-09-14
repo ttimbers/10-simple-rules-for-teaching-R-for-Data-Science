@@ -381,17 +381,37 @@ Source: https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html
 
 ---
 
-## 9. Use checklists to focus and facilitate peer learning
+### 9. Use checklists to focus and facilitate peer learning
 
-**What?** 
+**What?** Focus and provide structure to student peer review by providing them review checklists.
 
-**Why?**
+**Why?** Peer review is hard and often new to many. Also reviewing something you are new at is even harder! What to focus on?
 
-Data analysis checklist I made
+##### Data analysis review checklist:
 
+.pull-left[
+```{r da-review-checklist-1, out.width="90%", fig.retina=2}
+knitr::include_graphics("img/da-review-checklist-1.png")
+```
+]
+
+.pull-right[
+```{r da-review-checklist-2, out.width="90%", fig.retina=2}
+knitr::include_graphics("img/da-review-checklist-2.png")
+```
+]
+
+Source: https://github.com/UBC-MDS/data-analysis-review-checklist
 ---
 
-ROpenSci pacakge review checklist 
+```{r ropensci-review-template, out.width="60%", fig.retina=2}
+knitr::include_graphics("img/ropensci-review-template.png")
+```
+
+#### Explore more:
+- [Journal of Open Source Software review checklist](https://joss.readthedocs.io/en/latest/review_checklist.html)
+- [Machine Learning Reproducibility Checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf) by Joelle Pineau
+- [ Checklist Manifesto](http://atulgawande.com/book/the-checklist-manifesto/) by Atul Gawande
 
 ---
 
@@ -417,7 +437,7 @@ ROpenSci pacakge review checklist
 6. Use real and rich, but accessible, data sets
 7. Provide cultural and historical context
 8. Build a safe, inclusive and welcoming community
-9. Utilize/facilitate peer learning
+9. Use checklists to focus and facilitate peer learning
 10. Use realistic projects to link concepts/tasks together
 
 ---

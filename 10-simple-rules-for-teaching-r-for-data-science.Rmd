@@ -363,6 +363,15 @@ Source: https://colinfay.me/r-assignment/
 
 **Why?**
 
+Our MDS CoC? or DSCI 100?
+
+---
+
+Carpentries CoC
+
+#### Explore more:
+Allyskills workshop
+
 ---
 
 ## 9. Use checklists to focus and facilitate peer learning
@@ -387,6 +396,9 @@ ROpenSci pacakge review checklist
 
 ---
 
+...
+
+---
 
 ## Summary
 

@@ -404,11 +404,25 @@ knitr::include_graphics("img/da-review-checklist-2.png")
 Source: https://github.com/UBC-MDS/data-analysis-review-checklist
 ---
 
-```{r ropensci-review-template, out.width="60%", fig.retina=2}
-knitr::include_graphics("img/ropensci-review-template.png")
+#### ROpenSci R package reviews utilize checklists:
+
+.pull-left[
+```{r ropensci-1, out.width="80%", fig.retina=2}
+knitr::include_graphics("img/ropensci-1.png")
 ```
+]
+
+.pull-right[
+```{r ropensci-2, out.width="80%", fig.retina=2}
+knitr::include_graphics("img/ropensci-2.png")
+```
+]
+
+Source: https://github.com/ropensci/software-review/issues/495
 
 #### Explore more:
+- [Using rOpenSci Software Peer Review Guidelines for Teaching](https://ropensci.org/blog/2019/08/27/software-peer-review-guidelines-for-teaching/) blog post by Tiffany Timbers
+- [ROpenSci review template](https://devguide.ropensci.org/reviewtemplate.html)
 - [Journal of Open Source Software review checklist](https://joss.readthedocs.io/en/latest/review_checklist.html)
 - [Machine Learning Reproducibility Checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf) by Joelle Pineau
 - [ Checklist Manifesto](http://atulgawande.com/book/the-checklist-manifesto/) by Atul Gawande

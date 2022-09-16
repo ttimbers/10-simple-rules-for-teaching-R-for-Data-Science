@@ -445,9 +445,9 @@ Source: https://github.com/UBC-MDS/rlyrics
 
 ---
 
-Projects are central to UBC's founding data science course, STAT 545.
+Projects are central to UBC's founding data science course, STAT 545 (created by Jenny Bryan).
 
-```{r stat-545, out.width="60%", fig.retina=2}
+```{r stat-545, out.width="60%", fig.retina=2, fig.align='left'}
 knitr::include_graphics("img/stat-545.png")
 ```
 

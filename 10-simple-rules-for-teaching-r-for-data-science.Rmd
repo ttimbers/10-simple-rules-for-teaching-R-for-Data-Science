@@ -2,7 +2,7 @@
 title: "10 simple rules for teaching R for Data Science"  
 author: 
   - "Tiffany Timbers (UBC)"
-  - "`r Sys.Date()`"
+  - "2022-09-17"
 date: 'bit.ly/timbers-cascadia-r-conf-2022'
 output:
   xaringan::moon_reader:
@@ -136,9 +136,10 @@ blog post
 
 **Why?** Demonstrates process and makes you appear human!
 
-```{r lex-live-coding, out.width="70%", fig.retina=2, fig.pos='left'}
+```{r lex-live-coding, out.width="70%", fig.retina=2, fig.align="left"}
 knitr::include_graphics("img/lex-live-coding.png")
 ```
+
 Source: [A video introduction to live coding part 2](https://www.youtube.com/watch?v=SkPmwe_WjeY&t=111s) by Lex Nederbragt
 
 ---
@@ -199,7 +200,7 @@ knitr::include_graphics("img/swirl-demo.png")
 
 **Why?** Effective practice requires feedback!
 
-```{r tests-as-feedback, out.width="75%", fig.retina=2}
+```{r tests-as-feedback, out.width="75%", fig.retina=2, fig.align="left"}
 knitr::include_graphics("img/tests-as-feedback.png")
 ```
 
@@ -228,7 +229,8 @@ knitr::include_graphics("img/teaching-tech-together.jpeg")
 **Why?** Allows one to see how all the elements are manipulated.
 
 A small subset of the `palmerpengiuns` data set for teaching K-means clustering:
-```{r 10-toy-example-clustering-1, out.width="45%", fig.retina=2}
+
+```{r 10-toy-example-clustering-1, out.width="40%", fig.retina=2}
 knitr::include_graphics("img/10-toy-example-clustering-1.png")
 ```
 
@@ -269,7 +271,7 @@ knitr::include_graphics("img/jenny-bryan-left-join.png")
 
 **Why?** Motivating! 
 
-```{r README-example-plot-from-data-1, out.width="70%", fig.retina=2}
+```{r README-example-plot-from-data-1, out.width="70%", fig.retina=2, fig.align="left"}
 knitr::include_graphics("img/README-example-plot-from-data-1.png")
 ```
 
@@ -363,7 +365,7 @@ Source: https://colinfay.me/r-assignment/
 
 **Why?** Students cannot effectively learn if they do not feel safe.
 
-```{r dsci-100-coc, out.width="78%", fig.retina=2}
+```{r dsci-100-coc, out.width="78%", fig.retina=2, fig.align="left"}
 knitr::include_graphics("img/dsci-100-coc.png")
 ```
 
@@ -437,7 +439,7 @@ Source: https://github.com/ropensci/software-review/issues/495
 
 Student project from DSCI 524 (Collborative Software Development):
 
-```{r student-project, out.width="90%", fig.reztina=2}
+```{r student-project, out.width="90%", fig.reztina=2, fig.align="left"}
 knitr::include_graphics("img/student-project.png")
 ```
 
@@ -447,7 +449,7 @@ Source: https://github.com/UBC-MDS/rlyrics
 
 Projects are central to UBC's founding data science course, STAT 545 (created by Jenny Bryan).
 
-```{r stat-545, out.width="60%", fig.retina=2, fig.align='left'}
+```{r stat-545, out.width="60%", fig.retina=2, fig.align="left"}
 knitr::include_graphics("img/stat-545.png")
 ```
 
@@ -476,16 +478,20 @@ Source: https://stat545.stat.ubc.ca/
 ---
 
 
-## Acknowledgements
+### Acknowledgements
 
 
 - UBC Master of Data Science students
 
 - UBC DSCI 100 and 310 students
 
-- UBC Master of Data Science teaching team
+- [UBC Master of Data Science teaching team](https://ubc-mds.github.io/team/)
 
-- The Carpentries
+- [The Carpentries](https://carpentries.org/)
+
+- [Greg Wilson](https://third-bit.com/), Software Engineer, Deep Genomics
+
+- [Jenny Bryan](https://jennybryan.org/), Software Engineer, Posit
 
 ---
 

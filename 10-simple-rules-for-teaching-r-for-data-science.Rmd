@@ -437,7 +437,7 @@ Source: https://github.com/ropensci/software-review/issues/495
 
 Student project from DSCI 524 (Collborative Software Development):
 
-```{r student-project, out.width="90%", fig.retina=2}
+```{r student-project, out.width="90%", fig.reztina=2}
 knitr::include_graphics("img/student-project.png")
 ```
 
@@ -445,11 +445,18 @@ Source: https://github.com/UBC-MDS/rlyrics
 
 ---
 
-Inspiration: STAT 545 projects?
+Projects are central to UBC's STAT 545 founding data science course.
+
+```{r stat-545, out.width="60%", fig.retina=2}
+knitr::include_graphics("img/stat-545.png")
+```
+
+Source: https://stat545.stat.ubc.ca/
 
 #### Explore more:
 
 - [Project courses in MDS](https://ubc-mds.github.io/2019-08-22-project-courses/) blog post by Tiffany Timbers and Mike Gelbart
+- [Project-based learning: A review of the literature](https://doi.org/10.1177/1365480216659733) by Dimitra Kokotsaki, Victoria Menzies and Andy Wiggins
 
 ---
 

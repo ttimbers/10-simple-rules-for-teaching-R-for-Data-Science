@@ -554,6 +554,8 @@ Source: https://stat545.stat.ubc.ca/
 
 - [Colin Fay](https://colinfay.me/), Data Scientist & R Hacker, ThinkR
 
+- And many more educators in the R community!!! There are too many to list!
+
 ---
 
 

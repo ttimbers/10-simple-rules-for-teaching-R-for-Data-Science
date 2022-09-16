@@ -72,6 +72,8 @@ style_duo_accent(
 
 **Why?** Motivation!
 
+***
+
 .pull-left[
 .tiny[
 ```r
@@ -136,6 +138,8 @@ blog post
 
 **Why?** Demonstrates process and makes you appear human!
 
+***
+
 ```{r lex-live-coding, out.width="70%", fig.retina=2, fig.align="left"}
 knitr::include_graphics("img/lex-live-coding.png")
 ```
@@ -160,6 +164,8 @@ live coding](https://doi.org/10.1371/journal.pcbi.1008090) by Lex Nederbragt, Ra
 **What?** Give the learners many many problems to solve.
 
 **Why?** Repetition leads to learning!
+
+***
 
 Read the data files listed in the table below and and bind the names listed in the table to them.
 
@@ -200,7 +206,9 @@ knitr::include_graphics("img/swirl-demo.png")
 
 **Why?** Effective practice requires feedback!
 
-```{r tests-as-feedback, out.width="75%", fig.retina=2, fig.align="left"}
+***
+
+```{r tests-as-feedback, out.width="70%", fig.retina=2, fig.align="left"}
 knitr::include_graphics("img/tests-as-feedback.png")
 ```
 
@@ -228,11 +236,15 @@ knitr::include_graphics("img/teaching-tech-together.jpeg")
 
 **Why?** Allows one to see how all the elements are manipulated.
 
+***
+
 A small subset of the `palmerpengiuns` data set for teaching K-means clustering:
 
-```{r 10-toy-example-clustering-1, out.width="40%", fig.retina=2}
+```{r 10-toy-example-clustering-1, out.width="35%", fig.retina=2}
 knitr::include_graphics("img/10-toy-example-clustering-1.png")
 ```
+
+Source: [Clustering chapter of *Data Science: A First Introduction*](https://datasciencebook.ca/clustering.html) by Tiffany Timbers, Trevor Campbell & Melissa Lee
 
 ---
 
@@ -270,6 +282,8 @@ knitr::include_graphics("img/jenny-bryan-left-join.png")
 **What?** Use real and interesting data that is also easily understood by all.
 
 **Why?** Motivating! 
+
+***
 
 ```{r README-example-plot-from-data-1, out.width="70%", fig.retina=2, fig.align="left"}
 knitr::include_graphics("img/README-example-plot-from-data-1.png")
@@ -323,6 +337,8 @@ ggplot(subset(gapminder, continent != "Oceania"),
 
 **Why?** Cultivates an appreciation, or at least understanding of R's quirks (compared to other programming languages). Helps prevent frustration and/or annoyances. Helps with motivation again!
 
+***
+
 When teaching programming with the `tidyverse`, 
 I make sure to introduce R's history and it's design purpose, 
 so that the role and rationale for unquoted column names is clear:
@@ -365,7 +381,9 @@ Source: https://colinfay.me/r-assignment/
 
 **Why?** Students cannot effectively learn if they do not feel safe.
 
-```{r dsci-100-coc, out.width="78%", fig.retina=2, fig.align="left"}
+***
+
+```{r dsci-100-coc, out.width="75%", fig.retina=2, fig.align="left"}
 knitr::include_graphics("img/dsci-100-coc.png")
 ```
 
@@ -389,16 +407,18 @@ Source: https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html
 
 **Why?** Peer review is hard and often new to many. Also reviewing something you are new at is even harder! What to focus on?
 
+***
+
 ##### Data analysis review checklist:
 
 .pull-left[
-```{r da-review-checklist-1, out.width="90%", fig.retina=2}
+```{r da-review-checklist-1, out.width="85%", fig.retina=2}
 knitr::include_graphics("img/da-review-checklist-1.png")
 ```
 ]
 
 .pull-right[
-```{r da-review-checklist-2, out.width="90%", fig.retina=2}
+```{r da-review-checklist-2, out.width="85%", fig.retina=2}
 knitr::include_graphics("img/da-review-checklist-2.png")
 ```
 ]
@@ -437,6 +457,8 @@ Source: https://github.com/ropensci/software-review/issues/495
 
 **Why?** Motivation and exposure to the messiness of real data analysis.
 
+***
+
 Student project from DSCI 524 (Collborative Software Development):
 
 ```{r student-project, out.width="90%", fig.reztina=2, fig.align="left"}
@@ -462,17 +484,46 @@ Source: https://stat545.stat.ubc.ca/
 
 ---
 
-## Summary
+## 10 simple rules for teaching R for Data Science
+
+--
 
 1. Teach R by doing data analysis
+
+--
+
 2. Use participatory live coding
-3. Give tons and tons of practice!
-4. Give tons and tons of feedback!
+
+--
+
+3. Give tons and tons of practice
+
+--
+
+4. Give tons and tons of feedback
+
+--
+
 5. Use tractable or toy data examples
+
+--
+
 6. Use real and rich, but accessible, data sets
+
+--
+
 7. Provide cultural and historical context
+
+--
+
 8. Build a safe, inclusive and welcoming community
+
+--
+
 9. Use checklists to focus and facilitate peer learning
+
+--
+
 10. Have students do projects
 
 ---

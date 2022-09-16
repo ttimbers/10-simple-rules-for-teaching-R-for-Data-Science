@@ -544,6 +544,10 @@ Source: https://stat545.stat.ubc.ca/
 
 - [Jenny Bryan](https://jennybryan.org/), Software Engineer, Posit
 
+- [David Robinson](http://varianceexplained.org/), Director of Data Scientist, Heap
+
+- [Roger Peng](https://rdpeng.org/), Professor of Statistics and Data Sciences , University of Texas, Austin
+
 - [Lex Nederbragt](https://lexnederbragt.com/), Senior Lecturer, University of Oslo
 
 - [Sean Kross](https://seankross.com/), Data Staff Scientist, Fred Hutch Data Science Lab

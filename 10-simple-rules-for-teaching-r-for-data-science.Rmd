@@ -429,15 +429,27 @@ Source: https://github.com/ropensci/software-review/issues/495
 
 ---
 
-## 10. Use realistic projects to link concepts/tasks together
+## 10. Have students do projects
 
-**What?** 
+**What?** Have students perform a (scoped) data analysis project on a topic of their choosing.
 
-**Why?**
+**Why?** Motivation and exposure to the messiness of real data analysis.
+
+Student project from DSCI 524 (Collborative Software Development):
+
+```{r student-project, out.width="90%", fig.retina=2}
+knitr::include_graphics("img/student-project.png")
+```
+
+Source: https://github.com/UBC-MDS/rlyrics
 
 ---
 
-...
+Inspiration: STAT 545 projects?
+
+#### Explore more:
+
+- [Project courses in MDS](https://ubc-mds.github.io/2019-08-22-project-courses/) blog post by Tiffany Timbers and Mike Gelbart
 
 ---
 
@@ -452,7 +464,7 @@ Source: https://github.com/ropensci/software-review/issues/495
 7. Provide cultural and historical context
 8. Build a safe, inclusive and welcoming community
 9. Use checklists to focus and facilitate peer learning
-10. Use realistic projects to link concepts/tasks together
+10. Have students do projects
 
 ---
 
